@@ -1,38 +1,122 @@
+body{
+  font-family: 'Courier Prime', monospace;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.background-input{
+  background: radial-gradient(circle, rgba(123,66,166,1) 0%, rgba(65,38,92,1) 50%, rgba(65,38,92,1) 100%);
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Post{
+  background-image: url("idLegendario.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 454px;
+  max-width: 800px;
+  width: 100%;
+  display: table;
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.credential{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.credential-foto{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  padding-left: 28px;
+}
+
+.credential-foto img{
+  width: 85%;
+  height: 66%;
+  display: flex;
+}
+
+.margirn-name{
+  margin-top: 19px;
+}
+
+.credential-font{
+  font-size: 30px;
+}
+
+.recorteVideo{
+  Clip-path: inset(32px 150px 0px 108px);
+}
+
+.credential-info{
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  width: 50%;
+  margin-top: 60px;
+}
+
+.image-id-content{
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 60px;
+  padding-top: 8px;
+}
+
+.credential-text{
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  font-size: 30px;
+  color:#d2d2d2;
+}
+
+.credential-nivel{
+  font-size: 20px;
+}
+
+
+.logoNivel{
+  width: 100px;
+  height: 100px;
+}
+
+
+.texto-bienvenida-container{
+  width: 100%;
+  color: #d2d2d2;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.margirn-top-zero{
+  margin-top: 0 !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.margirn-bottom-zero{
+  margin-bottom: 0 !important;
+}
+
+.select-nivel-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.select-nivel-container select{
+  width: 50%;
 }
