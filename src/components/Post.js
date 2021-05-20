@@ -25,7 +25,9 @@ class Post extends Component {
         logoNivel: '',
         postSubmitted: false,
         screenshot: null,
-        tab: 0
+        tab: 0,
+        facingMode: '',
+
     }
 
 
@@ -46,6 +48,9 @@ class Post extends Component {
         });
     }
 
+    videoConstraints = () => {
+        this.state.facingMode = "user"
+      };
 
     showLogo = () => {
         if (this.state.content === "Pasajeros del Datsun") {
@@ -127,6 +132,7 @@ class Post extends Component {
                                                         className="recorteVideo"
                                                         audio={false}
                                                         ref={node => this.webcam = node}
+                                                        videoConstraints={this.videoConstraints}
                                                     /> 
                                                 </div>
                                                 <div className="form-group">
